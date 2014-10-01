@@ -22,6 +22,8 @@ How to
 
 ```
 harp init -b dmassiani/harp-browser-custom project-name
+or
+git clone https://github.com/dmassiani/harp-browser-custom.git project-name
 ```
 
 then do
