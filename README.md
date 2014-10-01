@@ -4,17 +4,24 @@ harp-browser-sync-browserify
 A harp boilerplate with browser-sync and browserify support.
 
 Based on https://github.com/kevinsimper/harp-browserify
-Forked by @dmassiani
+Forked from https://github.com/itzaks/harp-browser-sync-browserify
 
 Update
 ===============
 Add .scss reload
 
+Include
+===============
+Bourbon
+Neat
+Bitters
+Custom components
+
 How to
 ===============
 
 ```
-harp init -b itzaks/harp-browser-sync-browserify project-name
+harp init -b dmassiani/harp-browser-custom project-name
 ```
 
 then do
