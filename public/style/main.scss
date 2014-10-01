@@ -1,0 +1,25 @@
+@import "components/harp-bourbon/scss/bourbon";
+@import "settings/typography";
+@import "components/base/base";
+@import "components/harp-neat/scss/neat";
+
+// composants custom
+@import "components/_buttons.scss";
+
+body{
+	background: #fff;
+	color: #444343;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 500;
+}
+
+.container {
+	@include outer-container;
+	padding: 0 20px;
+	@include media($xlarge-screen) {
+		padding: 0;
+	}
+}

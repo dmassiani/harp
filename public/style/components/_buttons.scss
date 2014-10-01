@@ -1,0 +1,8 @@
+.button{
+	&.grey{
+		@include button( #ddd, grey );
+	}
+	&.pink{
+		@include button( pink, white );
+	}
+}
