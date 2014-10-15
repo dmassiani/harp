@@ -1,20 +1,20 @@
 @import "components/harp-bourbon/scss/bourbon";
 @import "settings/typography";
-$visual-grid: true;
+$visual-grid: false;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.2;
 @import "components/base/base";
 @import "components/harp-neat/scss/neat";
 
 // composants custom
-@import "components/_buttons.scss";
+@import "components/_buttons";
+@import "components/_typography";
 
 body{
 	background: #fff;
 	color: #444343;
 	margin: 0;
-}
-
-h1,h2,h3,h4,h5,h6{
-	font-weight: 500;
 }
 
 .container {
