@@ -1,5 +1,8 @@
-include projet-template/templates/section.jade
+include Atomics/Templates/section.jade
 
-h1 Introduction
-a(href="#" class="button grey") button grey
-a(href="#" class="button pink") button grey
+- var content = [{'title': 'premier titre', 'contenu': 'premier contenu', 'classes': ''},{'title': 'second titre', 'contenu': 'second contenu'},{'title': 'troisieme titre', 'contenu': 'troisieme contenu'}]
+- var content2 = [{'title': 'quatrieme titre', 'contenu': 'premier contenu'},{'title': 'second titre', 'contenu': 'second contenu'},{'title': 'troisieme titre', 'contenu': 'troisieme contenu'}]
+
++section( content )
+
++section( content2 )

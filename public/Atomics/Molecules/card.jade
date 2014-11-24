@@ -1,5 +1,10 @@
 include ../Atoms/_atomes.jade
 
-mixin card( title, content )
-	+atome-h1( title )(class="myclassA myclassB")
-	p #{content}
+mixin card( title, content, classes )
+	if !classes
+		- var classes = ''
+	else
+		- var classes = '--' + classes
+	div(class="molecules--card")
+		+atome-h1( title )(class="atome--h1" + classes)
+		+atome-p( title )(class="atome--p" + classes)

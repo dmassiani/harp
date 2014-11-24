@@ -1,3 +1,6 @@
 include ../Molecules/card.jade
 
-+card( 'mon titre', 'mon contenu')
+mixin cards( content )
+	div(class="organisms--cards")
+		each val in content
+			+card( val.title, val.contenu, val.classes )
