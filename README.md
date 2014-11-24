@@ -31,3 +31,14 @@ then do
 npm install
 npm start
 ```
+
+Preambules
+===============
+
+Jade templating
+===============
+Atoms < Molecules < Organisms < Templates < Pages
+===============
+Atoms et Molecules sont communs à tous
+Organisms possède un tronc commun et un tronc relatif au projet
+Templates et Pages sont relatif au projet
