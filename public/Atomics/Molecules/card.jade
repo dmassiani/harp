@@ -1,3 +1,5 @@
 include ../Atoms/_atomes.jade
 
-+atome-h1("My title")(class="myclassA myclassB")
+mixin card( title, content )
+	+atome-h1( title )(class="myclassA myclassB")
+	p #{content}
