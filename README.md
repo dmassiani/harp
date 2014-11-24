@@ -1,4 +1,4 @@
-harp-browser-sync-browserify
+harp
 ===============
 
 A harp boilerplate with browser-sync and browserify support.
