@@ -4,6 +4,7 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 Header unset ETag  
 FileETag none
+Header unset Set-Cookie
 
 <IfModule mod_expires.c>  
     ExpiresActive On  
@@ -45,28 +46,3 @@ FileETag none
 	</FilesMatch>
 
 </IfModule>
-
-##  activation ZEND optimizer  
-SetEnv ZEND_OPTIMIZER 1  
-  
-##  suppression de SESSID dans les url  
-SetEnv SESSION_USE_TRANS_SID 0  
-
-##  Commenter la ligne ci-dessous si plantage   
-php_flag zlib.output_compression on  
-  
-##  Activer le filtre  
-SetOutputFilter DEFLATE  
-  
-##  Certains navigateurs ne peuvent pas avoir GZIP (les vieux)   
-BrowserMatch ^Mozilla/4 gzip-only-text/html  
-BrowserMatch ^Mozilla/4\.0678 no-gzip  
-  
-##  On ne prend pas IE   
-BrowserMatch \bMSIE !no-gzip !gzip-only-text/html  
-  
-##  On ne compresse pas les images, elles le sont déjà  
-SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary  
-  
-##  on gère le cas des proxy   
-Header append Vary User-Agent env=!dont-vary  
